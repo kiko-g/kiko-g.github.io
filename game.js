@@ -42,71 +42,79 @@ function Component(width, height, color, x, y, type) {
 
     this.update = function () {
         ctx = gameArea.context;
+
         if (this.type == "text") {
             ctx.font = this.width + " " + this.height;
             ctx.fillStyle = color;
             ctx.fillText(this.text, this.x, this.y);
-        } else {
+        } 
+        else {
             ctx.fillStyle = color;
             ctx.fillRect(this.x, this.y, this.width, this.height);
         }
     }
+
     this.newPos = function () {
         this.gravitySpeed += this.gravity;
         this.x += this.speedX;
         this.y += this.speedY + this.gravitySpeed;
         this.hitBottom();
     }
+
     this.hitBottom = function () {
-        var rockbottom = gameArea.canvas.height - this.height;
-        if (this.y > rockbottom) {
-            this.y = rockbottom;
+        var rockBottom = gameArea.canvas.height - this.height;
+        if (this.y > rockBottom) {
+            this.y = rockBottom;
             this.gravitySpeed = 0;
         }
     }
-    this.crashWith = function (otherobj) {
-        var myleft = this.x;
-        var myright = this.x + (this.width);
-        var mytop = this.y;
-        var mybottom = this.y + (this.height);
-        var otherleft = otherobj.x;
-        var otherright = otherobj.x + (otherobj.width);
-        var othertop = otherobj.y;
-        var otherbottom = otherobj.y + (otherobj.height);
+
+    this.crashWith = function (otherObj) {
+        var myLeft = this.x;
+        var myRight = this.x + (this.width);
+        var myTop = this.y;
+        var myBottom = this.y + (this.height);
+        var otherLeft = otherObj.x;
+        var otherRight = otherObj.x + (otherObj.width);
+        var otherTop = otherObj.y;
+        var otherBottom = otherObj.y + (otherObj.height);
         var crash = true;
-        if ((mybottom < othertop) || (mytop > otherbottom) || (myright < otherleft) || (myleft > otherright)) {
+        if ((myBottom < otherTop) || (myTop > otherBottom) || (myRight < otherLeft) || (myLeft > otherRight)) {
             crash = false;
         }
+
         return crash;
     }
 }
+
 
 function updateGameArea() {
     var x, height, gap, minHeight, maxHeight, minGap, maxGap;
 
     for (let i = 0; i < obstacles.length; i += 1) {
-        if (hero.crashWith(obstacles[i])) {
-            return;
-        }
+        if (hero.crashWith(obstacles[i])) return;
     }
+
     gameArea.clear();
     gameArea.frameNumber += 1;
+
     if (gameArea.frameNumber == 1 || everyInterval(200)) {
         x = gameArea.canvas.width;
         minHeight = 50;  //min height for top bar obstacle
         maxHeight = 250; //max height for top bar obstacle
         height = Math.floor(Math.random() * (maxHeight - minHeight + 1) + minHeight);
-
         minGap = 100; //min pixel size of gap
         maxGap = 150; //max pixel size of gap
         gap = Math.floor(Math.random() * (maxGap - minGap + 1) + minGap);
         obstacles.push(new Component(20, height, OBSTACLE_COLOR, x, 0));
         obstacles.push(new Component(20, x - height - gap, OBSTACLE_COLOR, x, height + gap));
     }
+
     for (let i = 0; i < obstacles.length; i += 1) {
         obstacles[i].x += -1;
         obstacles[i].update();
     }
+
     if (gameArea.frameNumber > 670) 
         score.text = "Score: " + Math.floor((gameArea.frameNumber - 670)/10);
     hero.newPos();
