@@ -1,333 +1,485 @@
+<!-- 
+  * Template Name: iPortfolio - v1.4.1
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+-->
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>Francisco Gonçalves</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style/index.css">
-<link rel="stylesheet" href="style/safe.css">
-<!-- Import fonts -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya Sans">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather Sans">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Zilla Slab">
-<style>
-    :root { --seateal: #0c4b4b; --deepseateal: #1d3535; --lightseateal: #7dc9c9; --lightmint: #BFE5D9; --mint: #3EB489; }
+<html lang="en">
 
-    a {
-        color:#0645ad;
-    }
-    div {
-        padding-top: 20px;
-        padding-right: 40px;
-        padding-bottom: 0px;
-        padding-left: 0px;
-    }
-    h1,
-    h2,
-    h3,
-    h4,
-    h5 {
-        font-family: "Alegreya Sans"
-    }
-    body {
-        font-family: "Alegreya Sans"; font-size: 22px;
-    }
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-    table {
-        margin:0px
-    }
-    td, th {
-        width: 7cm;
-        height: 1.5cm;
-        
-        padding: 0.3cm;
-        padding-left: 6px;
+  <title>Francisco Gonçalves</title>
 
-        text-align: left;
-        font-size: 20px;
-        font-style: bold;
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-        border: 0.02cm solid white;
-        border-color: #d6d6d6;
-    }
-    th {
-        width: 6.5cm;
-        font-size: 22px;
-        color: #ffffff;
-        background: var(--seateal);
-    }
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-    img {
-        margin-bottom: -6px;
-        margin-top: 16px;
-        opacity: 1;
-        cursor: pointer
-    }
-    img:hover {
-        opacity: 0.9;
-        cursor: pointer
-    }
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-    /* custom */
-    .bgimg {
-        background-image: url("img/champs.jpg");
-        min-height: 80%;
-        background-size: cover;
-        background-position: center;
-    }
-    .divider {
-        width: auto;
-        border-radius: 2px;
-        border-top: 3px solid var(--lightseateal);
-        border-bottom: 3px solid var(--lightseateal);
-    }
-
-    .subtitle {
-        padding: 5px;
-        font-size: 40px;
-        border-radius: 5px;
-        display: inline;
-        color: #ffffff;
-        background-color: var(--seateal);
-    }
-</style>
-
-
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
 
 <body>
-    <!-- Sidebar Menu -->
-    <nav class="sidebar stl collapse top large padding" style="z-index:3;width:250px;font-weight:bold;" id="mySidebar"><br>
-        <div class="container">
-            <img src="img/201704790.jpg" style="margin-top: 45px; width:80%" onclick="onClick(this)" alt="Francisco">  <br>
-        </div>  
-        <div class="bar-block">
-            <a href="#"             onclick="close()" class="bar-item button hover-white"> Home       </a>
-            <a href="#contacts"     onclick="close()" class="bar-item button hover-white"> Contacts   </a>
-            <a href="#education"    onclick="close()" class="bar-item button hover-white"> Education  </a>
-            <a href="#skills-proj"  onclick="close()" class="bar-item button hover-white"> Skills &amp; Projects</a>
-            <a href="#experience"   onclick="close()" class="bar-item button hover-white"> Experience </a>
-            <a href="#interests"    onclick="close()" class="bar-item button hover-white"> Interests  </a>
-            <a style="background-color: var(--lightmint);" class="bar-item"></a> <!--side division-->
-            <a href="game.html"     target="_blank" onclick="close()" class="bar-item button hover-white">Game</a>
-            <a href="haven.html"    target="_blank" onclick="close()" class="bar-item button hover-white">Haven</a>
-        </nav>
+  <!----------- Mobile nav toggle button ----------->
+  <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+
+  <!----------- Header ----------->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Francisco Gonçalves</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://github.com/kiko-g" target="_blank" class="google-plus">            <i class="bx bxl-github">   </i></a>
+          <a href="https://linkedin.com/in/kikogoncalves/" target="_blank" class="linkedin">  <i class="bx bxl-linkedin"> </i></a>
+          <a href="https://facebook.com/kikogoncalves.3899/" target="_blank" class="facebook"><i class="bx bxl-facebook"> </i></a>
+          <a href="https://twitter.com/kikogoncalves_/" target="_blank" class="twitter">      <i class="bx bxl-twitter">  </i></a>
+          <a href="https://instagram.com/kikogoncalves_/" target="_blank" class="instagram">  <i class="bx bxl-instagram"></i></a>
+        </div>
+      </div>
+
+      <nav class="nav-menu">
+        <ul>
+          <li class="active"><a href="index.html"><i class="bx bx-home"></i>  <span>Home</span></a></li>
+          <li><a href="#about"><i class="bx bx-user"></i>                     <span>About</span></a></li>
+          <li><a href="#skills"><i class="bx bx-file-blank"></i>              <span>Skills</span></a></li>
+          <li><a href="#resume"><i class="bx bx-file-blank"></i>              <span>Resume</span></a></li>
+          <!-- <li><a href="#portfolio"><i class="bx bx-book-content"></i>         <span>Portfolio</span></a></li> -->
+          <!-- <li><a href="#services"><i class="bx bx-server"></i>                <span>Services</span></a></li> -->
+          <li><a href="#contact"><i class="bx bx-envelope"></i>               <span>Contact</span></a></li>
+        </ul>
+      </nav>
+
+      <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+
     </div>
-        
-    <!-- Top menu on small screens -->
-    <header class="container top hide-large stl xlarge padding">
-        <a href="" class="button stl margin-right" onclick="open()">☰</a>
-        <span> Francisco Gonçalves</span>
-    </header>
-
-    <!-- Overlay effect when opening sidebar on small screens -->
-    <div class="overlay hide-large" onclick="close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+  </header><!-- End Header -->
 
 
+  
+  <!----------- Hero Section ----------->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Francisco Gonçalves</h1>
+      <p>I'm a <span class="typed" data-typed-items="Developer, Tech Enthusiast, Dreamer, Gamer, Portista"></span></p>
+    </div>
+  </section>
 
 
-    <!-- !PAGE CONTENT! -->
-    <div class="main" style="margin-left:300px;margin-right:60px">
+  <main id="main">
+    <!----------- About Section ----------->
+    <section id="about" class="about">
+      <div class="container">
 
-        <!-- Header and brief -->
-        <div class="container" style="margin-top:45px; margin-bottom:0px" id="home">
-            <h1 class="subtitle" style="font-size: 64px;">
-                <b>Francisco Gonçalves</b>
-            </h1>
-            <h2><a href="https://sigarra.up.pt/feup/en" target="_blank"><strong>FEUP</strong></a> | Porto, Portugal<br></h2>
-            <h3>
-                <a href="https://sigarra.up.pt/feup/en/CUR_GERAL.CUR_PLANOS_ESTUDOS_VIEW?pv_plano_id=2496&amp;pv_tipo_cur_sigla=&amp;pv_origem=CUR&amp;pv_ano_lectivo=2020" target="_blank">
-                Informatics and Computer Engineering</a> Student
-            </h3>
-            
+        <div class="section-title">
+          <h2>About</h2>
+          <p class="font-italic">
+            When technology meets creativity...
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Software Engineer Student</h3>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="icofont-rounded-right"></i> <strong>Age:</strong> 21</li>
+                  <li><i class="icofont-rounded-right"></i> <strong>City:</strong> Porto, Portugal</li>
+                  <li><i class="icofont-rounded-right"></i> <strong>Birthday:</strong> 3 August 1999</li>
+                  <li><i class="icofont-rounded-right"></i> <strong>Phone:</strong> +351 91 827 11 05</li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="icofont-rounded-right"></i> <strong>Website:</strong> web.fe.up.pt/~up201704790</li>
+                  <li><i class="icofont-rounded-right"></i> <strong>Degree:</strong> (Almost) Bachelor of Science :)</li>
+                  <li><i class="icofont-rounded-right"></i> </li>
+                  <li><i class="icofont-rounded-right"></i> </li>
+                </ul>
+              </div>
+            </div>
             <p>
-                Code and technology enthusiast. Daydreamer. Gamer. And more.<br>
-                <b style="font-style: italic; padding: 3px; color: #4976a3;"> When technology meets creativity..." </b>
+              Hi, I'm Francisco and I would describe myself as a passionate person. <br>
+              I believe in getting better everyday and finding zeal in things in the rollercoaster of life. <br>
+              Always be grateful, hopeful and surround yourself of what you love.
             </p>
-        </div>
-        
-
-        <!-- Contacts -->
-        <div class="container" id="contacts" style="margin-top:50px">
-            <hr class="divider">
-            <h1 class="subtitle"><b>Contacts</b></h1>
-            <ul style="margin-top: 15px;">
-                <li><a href="https://github.com/kiko-g" target="_blank">Github   </a></li>
-                <li><a href="https://linkedin.com/in/kikogoncalves" target="_blank">Linkedin </a></li>
-                <li><a href="mailto:up201704790@fe.up.pt">Email</a> (up201704790@fe.up.pt)        </li>
-            </ul>
-            <!-- <a href="https://twitter.com/kikogoncalves_?ref_src=twsrc%5Etfw" class="twitter-follow-button" 
-               data-show-count="false">Follow @kikogoncalves_ </a>
-            <br>
-            <a class="github-button" href="https://github.com/kiko-g" aria-label="Follow @kiko-g on GitHub">Follow @kiko-g</a> -->
+          </div>
         </div>
 
+      </div>
+    </section>
 
-        <!-- Education -->
-        <div class="container" id="education" style="margin-top:50px">
-            <hr class="divider">
-            <h1 class="subtitle"><b>Education</b></h1>
-            <ul style="margin-top: 15px;">
-                <li>Attended elementary+middle school at CNSL (Colégio Nossa Senhora de Lourdes)</li>
-                <li>Attended high school at Escola Secundária Clara de Resende and graduated with 17.5/20</li>
-                <li>Started majoring in 
-                    <a href="https://sigarra.up.pt/feup/en/CUR_GERAL.CUR_PLANOS_ESTUDOS_VIEW?pv_plano_id=2496&amp;pv_tipo_cur_sigla=&amp;pv_origem=CUR&amp;pv_ano_lectivo=2019" target="_blank"> 
-                        Informatics and Computer Engineering</a> (BSc 3 years + MSc 2 years) in the academic year of 2018/19 at the
-                    <a href="https://sigarra.up.pt/feup/en" target="_blank">Faculty of Engineering of the University of Porto</a></li>
-                <li>Current cumulative average: <b style="color: white; background-color: var(--deepmint);">14.3 / 20</b>
-            </li></ul>
+
+    <!----------- Skills Section ----------->
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>Below you can get and idea of the technical skills I have using a mildly accurate scale</p>
         </div>
 
+        <div class="row skills-content">
+          <div class="col-lg-6" data-aos="fade-up">
+            <div class="progress">
+              <span class="skill">HTML <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
 
-        <!-- Skills and Projects -->
-        <div class="container" id="skills-proj" style="margin-top:50px">
-            <hr class="divider">
-            <h1 class="subtitle"><b>Skills and Projects</b></h1>
-            <table style="margin-top: 20px">
-                <thead>
-                    <tr>
-                        <th style="text-align: center; background-color: var(--deepseateal)" colspan="3">College Projects</th>
-                    </tr>
-                </thead>
-                <tbody><tr>
-                    <th>C++</th>
-                    <td style="width: 15.5cm;"> Simulation of a travelling agency<br>Routing app for deliveries </td>
-                    <td>
-                        <a href="https://www.github.com/kiko-g/feup-prog" target="_blank">PROG</a>
-                        <br>
-                        <a href="https://github.com/kiko-g/feup-cal/tree/master/project#meat-wagons" target="_blank">CAL</a>
-                    </td>
-                </tr>
-                <tr>
-                    <th>SQL</th>
-                    <td>SQL and UML supermakert project</td>
-                    <td><a href="https://www.github.com/kiko-g/feup-bdad" target="_blank">BDAD</a></td>
-                </tr>
-                <tr>
-                    <th>Java</th>
-                    <td>Pacman reimagined<br><ul><li>Exploring Design Patterns and SOLID principles using Java</li></ul></td>
-                    <td>
-                        <a href="https://github.com/kiko-g/feup-lpoo/tree/master/project#lpoo_28---pacman-reimagined" target="_blank">LPOO</a>
-                        <br>
-                        <a href="https://github.com/kiko-g/feup-lpoo/blob/master/project/docs/demo.gif" target="_blank">Project Demo</a>
-                    </td>
-                </tr>
-                <tr>
-                    <th>Prolog</th>
-                    <td>Prolog exercises solution<br>Table game (Fuse) from scratch (SICStus)<br>Optimization problem<br></td>
-                    <td><a href="https://www.github.com/kiko-g/feup-plog" target="_blank">PLOG</a></td>
-                </tr>
-                <tr>
-                    <th>Linux API</th>
-                    <td>Operating Systems course projects</td>
-                    <td><a href="https://github.com/kiko-g/feup-sope" target="_blank">SOPE</a></td>
-                </tr>
-                <tr>
-                    <th>Dart/Flutter</th>
-                    <td>Navigation mobile app</td>
-                    <td><a href="https://www.github.com/kiko-g/feup-esof" target="_blank">ESOF</a></td>
-                </tr>
-                <tr>
-                    <th>JS / WebGL</th>
-                    <td>Computer Graphics Projects<br>Frontend app with for Prolog "Fuse" game</td>
-                    <td>
-                        <a href="https://github.com/kiko-g/feup-laig#laig-20192020" target="_blank">LAIG</a> |
-                        <a href="https://www.github.com/kiko-g/feup-cgra" target="_blank">CGRA</a>
-                        <br>
-                        <a href="https://github.com/kiko-g/feup-laig/tree/master/T3" target="_blank">Fuse (LAIG T3) </a>
-                    </td>
-                </tr>
-                <tr>
-                    <th>C programming w/ peripherals</th>
-                    <td>Computer Labs modules (Timer, KBD, PS/2 mouse, etc.)<br>Space Lander game using those modules</td>
-                    <td><a href="https://github.com/kiko-g/feup-lcom#lcom-2019-2020-repository" target="_blank">LCOM</a></td>
-                </tr>
-                <tr>
-                    <th>C for networking</th>
-                    <td>Computer Networking course projects (RCOM) 
-                        <ul>
-                            <li>Serial Port file transfer</li>
-                            <li>FTP download app and configuration and analysis of a network</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <a href="https://github.com/kiko-g/feup-rcom/tree/master/P1#rcom-20192020" target="_blank">Serial Port</a>
-                        <br>
-                        <a href="https://github.com/kiko-g/feup-rcom/tree/master/P2" target="_blank">FTP Download App</a>
-                    </td>
-                </tr>
-                <tr>
-                    <th>Python and Jupyter NB</th>
-                    <td>AI course projects (IART)
-                        <ul>
-                            <li>Optimization problem: Self Driving Rides</li>
-                            <li>Classification for Football Outcome Prediction</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <a href="https://github.com/kiko-g/feup-iart/tree/master/Projects/P1#self-driving-rides" target="_blank">Google Hashcode 2018</a>
-                        <br>
-                        <a href="https://github.com/kiko-g/feup-iart/tree/master/Projects/P2#supervised-learning-models-used-to-predict-football-matches-outcomes" target="_blank">Football outcome prediction</a>
-                    </td>
-                </tr>
-            </tbody></table>
+            <div class="progress">
+              <span class="skill">CSS <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">JavaScript <i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">PHP <i class="val">40%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>            
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="progress">
+              <span class="skill">C/C++ <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Gimp <i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <table >
+          <thead>
+            <tr>
+              <th style="text-align: center; background-color: var(--deepseateal)" colspan="3">
+                <h3><strong>College Projects</strong></h3>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>C++</th>
+              <td style="width: 15.5cm;"> Simulation of a travelling agency<br>Routing app for deliveries
+              </td>
+              <td>
+                <a href="https://www.github.com/kiko-g/feup-prog" target="_blank">PROG</a>
+                <br>
+                <a href="https://github.com/kiko-g/feup-cal/tree/master/project#meat-wagons" target="_blank">CAL</a>
+              </td>
+            </tr>
+            <tr>
+              <th>SQL</th>
+              <td>SQL and UML supermakert project</td>
+              <td><a href="https://www.github.com/kiko-g/feup-bdad" target="_blank">BDAD</a></td>
+            </tr>
+            <tr>
+              <th>Java</th>
+              <td>Pacman reimagined<br>
+                <ul>
+                  <li>Exploring Design Patterns and SOLID principles using Java</li>
+                </ul>
+              </td>
+              <td>
+                <a href="https://github.com/kiko-g/feup-lpoo/tree/master/project#lpoo_28---pacman-reimagined"
+                  target="_blank">LPOO</a>
+                <br>
+                <a href="https://github.com/kiko-g/feup-lpoo/blob/master/project/docs/demo.gif" target="_blank">Project
+                  Demo</a>
+              </td>
+            </tr>
+            <tr>
+              <th>Prolog</th>
+              <td>Prolog exercises solution<br>Table game (Fuse) from scratch (SICStus)<br>Optimization
+                problem<br></td>
+              <td><a href="https://www.github.com/kiko-g/feup-plog" target="_blank">PLOG</a></td>
+            </tr>
+            <tr>
+              <th>Linux API</th>
+              <td>Operating Systems course projects</td>
+              <td><a href="https://github.com/kiko-g/feup-sope" target="_blank">SOPE</a></td>
+            </tr>
+            <tr>
+              <th>Dart/Flutter</th>
+              <td>Navigation mobile app</td>
+              <td><a href="https://www.github.com/kiko-g/feup-esof" target="_blank">ESOF</a></td>
+            </tr>
+            <tr>
+              <th>JS / WebGL</th>
+              <td>Computer Graphics Projects<br>Frontend app with for Prolog "Fuse" game</td>
+              <td>
+                <a href="https://github.com/kiko-g/feup-laig#laig-20192020" target="_blank">LAIG</a> |
+                <a href="https://www.github.com/kiko-g/feup-cgra" target="_blank">CGRA</a>
+                <br>
+                <a href="https://github.com/kiko-g/feup-laig/tree/master/T3" target="_blank">Fuse (LAIG T3)
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <th>C programming w/ peripherals</th>
+              <td>Computer Labs modules (Timer, KBD, PS/2 mouse, etc.)<br>Space Lander game using those
+                modules</td>
+              <td><a href="https://github.com/kiko-g/feup-lcom#lcom-2019-2020-repository" target="_blank">LCOM</a></td>
+            </tr>
+            <tr>
+              <th>C for networking</th>
+              <td>Computer Networking course projects (RCOM)
+                <ul>
+                  <li>Serial Port file transfer</li>
+                  <li>FTP download app and configuration and analysis of a network</li>
+                </ul>
+              </td>
+              <td>
+                <a href="https://github.com/kiko-g/feup-rcom/tree/master/P1#rcom-20192020" target="_blank">Serial Port</a>
+                <br>
+                <a href="https://github.com/kiko-g/feup-rcom/tree/master/P2" target="_blank">FTP Download
+                  App</a>
+              </td>
+            </tr>
+            <tr>
+              <th>Python and Jupyter NB</th>
+              <td>AI course projects (IART)
+                <ul>
+                  <li>Optimization problem: Self Driving Rides</li>
+                  <li>Classification for Football Outcome Predictions</li>
+                </ul>
+              </td>
+              <td>
+                <a href="https://github.com/kiko-g/feup-iart/tree/master/Projects/P1#self-driving-rides"
+                  target="_blank">Google Hashcode 2018</a>
+                <br>
+                <a href="https://github.com/kiko-g/feup-iart/tree/master/Projects/P2#supervised-learning-models-used-to-predict-football-matches-outcomes"
+                  target="_blank">Football outcome predictions</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+
+    <!----------- Resume Section ----------->
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+            <h3 class="resume-title">Sumary</h3>
+            <div class="resume-item pb-0">
+              <h4>Francisco Gonçalves</h4>
+              <p><em>Software Engineering Student</em></p>
+              <ul>
+                <li>FEUP, Porto, Portugal</li>
+              </ul>
+            </div>
 
-        <!-- Experience -->
-        <div class="container" id="experience" style="margin-top:50px">
-            <hr class="divider">
-            <h1 class="subtitle"><b>Experience</b></h1>
-            <h3>None lol</h3>
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Master of Fine Arts &amp; Graphic Design</h4>
+              <h5>2015 - 2016</h5>
+              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
+              <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
+            </div>
+            <div class="resume-item">
+              <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
+              <h5>2010 - 2014</h5>
+              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
+              <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Senior graphic design specialist</h4>
+              <h5>2019 - Present</h5>
+              <p><em>Experion, New York, NY </em></p>
+              <ul>
+                <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
+                <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
+                <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
+                <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Graphic design specialist</h4>
+              <h5>2017 - 2018</h5>
+              <p><em>Stepping Stone Advertising, New York, NY</em></p>
+              <ul>
+                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
+                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
+                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
+                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
+              </ul>
+            </div>
+          </div>
         </div>
 
+      </div>
+    </section>
 
-        <!-- Interests -->
-        <div class="container" id="interests" style="margin-top:50px">
-            <hr class="divider">
-            <h1 class="subtitle"><b>Interests</b></h1>
-            <br style="margin-bottom:20px"> Passionate about music, football and gaming.
-            <ul>
-                <li>Music has always been special to me, but have a soft spot for 
-                    <a href="https://open.spotify.com/artist/4xRYI6VqpkE3UwrDrAZL8L" target="_blank">Logic</a> and
-                    <a href="https://open.spotify.com/artist/20JZFwl6HVl6yg8a4H3ZqK" target="_blank">Panic! at the Disco</a>.
-                </li>
-                <li>Football is a great passion of mine. I grew up watching, supporting and loving 
-                    <a href="https://www.fcporto.pt/" target="_blank"> FC Porto</a>, the club that made me fall in love with football. 
-                    I am proud to say that i am partner of FC Porto and will follow this club everywhere.
-                </li>
-                <li>I am very passionate about gaming in general, with a particular zeal for Call of Duty and its competitive scene</li>
-            </ul>
+    
+    <!----------- Contact Section ----------->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Below you can find the means to contact me directly.</p>
         </div>
-    </div> <!-- End page content -->
 
+        <div class="row" data-aos="fade-in">
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
 
-    <!-- Bottom div -->
-    <div class="light-grey container padding-32" style="margin-top:50px;padding-right:58px">
-        <p class="right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="hover-opacity">w3.css</a></p>
+              <div class="phone">
+                <i class="icofont-phone"></i>
+                <h4>Call</h4>
+                <p>+351 91 827 11 05</p>
+              </div>
+
+              <div class="email">
+                <i class="icofont-envelope"></i>
+                <h4>Personal Email</h4>
+                <p><a href="mailto:kikojpgoncalves@gmail.com">kikojpgoncalves@gmail.com</a></p>
+              </div>
+
+              <div class="email">
+                <i class="icofont-envelope"></i>
+                <h4>Student Email</h4>
+                <p><a href="mailto:up201704790@fe.up.pt">up201704790@fe.up.pt</a></p>
+              </div>
+
+              <div class="address">
+                <i class="icofont-google-map"></i>
+                <h4>Location</h4>
+                <p>Rua Professor Mota Pinto, 226, 3º Dto.</p>
+              </div>
+
+              <iframe 
+                  width="400"
+                  height="300"
+                  src="https://maps.google.com/maps?q=rua%20professor%20mota%20pinto%20226&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+              </iframe>
+            </div>
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!----------- Footer ----------->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <span>iPortfolio</span>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
     </div>
+  </footer><!-- End  Footer -->
 
-    <script>
-        // Script to open and close sidebar
-        function open() {
-            document.getElementById("mySidebar").style.display = "block";
-            document.getElementById("myOverlay").style.display = "block";
-        }
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
-        function close() {
-            document.getElementById("mySidebar").style.display = "none";
-            document.getElementById("myOverlay").style.display = "none";
-        }
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
 
-        // Modal Image Gallery
-        function onClick(element) {
-            document.getElementById("img01").src = element.src;
-            document.getElementById("modal01").style.display = "block";
-            var captionText = document.getElementById("caption");
-            captionText.innerHTML = element.alt;
-        }
-    </script>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
-    <!-- BUTTONS -->
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-    </body>
+</body>
+
 </html>

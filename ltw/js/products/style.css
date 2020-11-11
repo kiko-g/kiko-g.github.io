@@ -1,0 +1,81 @@
+body {
+  width: 50em;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  margin-top: 1em;
+  color: white;
+  background-color: teal;
+}
+
+table {
+  color: white;
+  background-color:rgb(162, 89, 55);
+  width: 100%;
+  margin-top: 1em;
+}
+
+th, td {
+  padding: 1em;
+  text-align: center;
+}
+
+th:nth-child(2),
+th:first-child, td:first-child {
+  text-align: left;
+}
+
+footer {
+  margin: 1em 0;
+}
+
+#total {
+  color: teal;
+  padding-left: 5px;
+  font-weight: bolder;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+input[type=button],
+input[type=submit] {
+  border: 2px solid rgb(228, 209, 197);
+  border-radius: 8px;
+  color: white;
+  background-color: teal;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+}
+input[type=button] {
+  border-radius: 8px;
+  border: 2px solid rgb(199, 174, 158);
+  background-color: rgb(162, 89, 55);
+}
+
+input[type=button]:hover {
+  border-radius: 8px;
+  border: 2px solid rgb(162, 89, 55);
+  background-color: rgba(0, 128, 128, 0.75);
+}
+input[type=submit]:hover {
+  border-radius: 8px;
+  border: 2px solid teal;
+  background-color: rgb(162, 89, 55, 0.75);
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0px;
+  box-sizing: border-box;
+}

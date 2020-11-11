@@ -1,0 +1,79 @@
+:root {
+  --seateal: #0c4b4b;
+  --deepseateal: #1d3535;
+  --lightseateal: #7dc9c9;
+  --lightmint: #bfe5d9;
+  --mint: #3eb489;
+}
+a {
+  color: #0645ad;
+}
+div {
+  padding-top: 20px;
+  padding-right: 40px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+h1, h2, h3, h4, h5, body {
+  font-family: "Alegreya Sans";
+}
+body {
+  font-family: "Alegreya Sans";
+  font-size: 22px;
+}
+table {
+  margin: 0px
+}
+td, th {
+  width: 7cm;
+  height: 1.5cm;
+
+  padding: 0.3cm;
+  padding-left: 6px;
+
+  text-align: left;
+  font-size: 20px;
+  font-style: bold;
+
+  border: 0.02cm solid white;
+  border-color: #d6d6d6;
+}
+th {
+  width: 6.5cm;
+  font-size: 22px;
+  color: #ffffff;
+  background: var(--seateal);
+}
+img {
+  margin-bottom: -6px;
+  margin-top: 16px;
+  opacity: 1;
+  cursor: pointer
+}
+img:hover {
+  opacity: 0.9;
+  cursor: pointer
+}
+/* custom */
+.bgimg {
+  background-image: url("img/champs.jpg");
+  min-height: 80%;
+  background-size: cover;
+  background-position: center;
+}
+
+.divider {
+  width: auto;
+  border-radius: 2px;
+  border-top: 3px solid var(--lightseateal);
+  border-bottom: 3px solid var(--lightseateal);
+}
+
+.subtitle {
+  padding: 5px;
+  font-size: 40px;
+  border-radius: 5px;
+  display: inline;
+  color: #ffffff;
+  background-color: var(--seateal);
+}
