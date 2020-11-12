@@ -1081,8 +1081,50 @@ section {
   }
 }
 
-
+/* Non-templated CSS below */
 tr, th, td {
   padding: 0.5em 2em;
-  border: 1px solid rgb(213, 213, 213);
+  border: 1px solid rgb(215, 230, 241);
+}
+
+
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+    display: block; 
+    border: 0px solid rgb(225, 232, 236);
+    padding: 0;
+    margin-bottom: 5px;
+  }
+
+  tr {
+    border-bottom: 1px solid cornflowerblue;
+  }
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+    font-size: small;
+	}
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 0px solid #eee; 
+		position: relative;
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
 }
