@@ -1,14 +1,3 @@
-<?php
-  $db = new PDO('sqlite:news.db');
-
-  $stmt = $db->prepare('SELECT news.*, users.*, COUNT(comments.id) AS comments FROM news JOIN
-                                      users USING (username) LEFT JOIN
-                                      comments ON comments.news_id = news.id
-                        GROUP BY news.id, users.username
-                        ORDER BY published DESC');
-  $stmt->execute();
-  $articles = $stmt->fetchAll();
-?>
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
@@ -16,10 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
-    <link href="layout.css" rel="stylesheet">
-    <link href="responsive.css" rel="stylesheet">
-    <link href="comments.css" rel="stylesheet">
-    <link href="forms.css" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -58,32 +43,3 @@
         <p>Proin lectus felis, fringilla nec magna ut, vestibulum volutpat elit. Suspendisse in quam sed tellus fringilla luctus quis non sem. Aenean varius molestie justo, nec tincidunt massa congue vel. Sed tincidunt interdum laoreet. Vivamus vel odio bibendum, tempus metus vel.</p>
       </article>
     </aside>
-    <section id="news">
-      <?php foreach($articles as $article) { ?>
-      <article>
-        <header>
-          <h1>
-            <a href="news_item.php?id=<?=$article['id']?>"><?=$article['title']?></a>
-          </h1>
-        </header>
-        <img src="http://lorempixel.com/600/300/business/" alt="">
-        <p><?=$article['introduction']?></p>
-        <footer>
-          <span class="author"><?=$article['name']?></span>
-          <?php $tags = explode(',', $article['tags']); ?>
-          <span class="tags">
-            <?php foreach ($tags as $tag) { ?>
-              <a href="list_news.php?tag=<?=$tag?>">#<?=$tag?></a>
-            <?php } ?>
-          </span>
-          <span class="date"><?=date('Y-m-d H:i:s', $article['published']);?></span>
-          <a class="comments" href="news_item.php?id=<?=$article['id']?>#comments"><?=$article['comments']?></a>
-        </footer>
-      </article>
-    <?php } ?>
-    </section>
-    <footer>
-      <p>&copy; Fake News, 2017</p>
-    </footer>
-  </body>
-</html>
