@@ -1,0 +1,210 @@
+/* fonts */
+body {
+  font-family: 'Verdana', sans-serif;
+}
+p {
+  font-family: 'Georgia', serif;
+  line-height: 1.4em;
+}
+header h2 {
+  font-size: 1em;
+}
+header a {
+  font-size: 0.8em;
+}
+#news header {
+  font-size: 1.5em;
+}
+#news footer {
+  font-size: 0.8em;
+}
+
+/* header */
+body>header {
+  background-color: #046dd5;
+  color: white;
+  padding: 1em;
+}
+
+body>header h1,
+body>header h2 {
+  margin: 0;
+}
+
+body>header a {
+  color: white;
+  background-color: #046dd5;
+  padding: 0.1em 0.2em;
+  text-decoration: none;
+}
+
+body>header a:hover {
+  color: #2a2f33;
+}
+
+body>header #signup a:first-child {
+  border-right: 1px solid white;
+}
+
+body>header #signup a {
+  padding: 0.2em 0.6em 0.2em 0.3em;
+}
+
+
+/* navigation */
+#menu ul {
+  margin: 0em;
+  padding: 0em;
+}
+
+#menu li {
+  padding: 1em 0em;
+  text-align: center;
+  list-style-type: none;
+  background-color: white;
+}
+
+#menu li a {
+  padding: 1em 2em;
+  color: black;
+  text-decoration: none;
+}
+
+#menu li:hover {
+  background-color: #2a2f33;
+}
+
+#menu li:hover a {
+  color: white;
+}
+
+#hamburger,
+.hamburger {
+  display: none;
+}
+
+
+/* menu section colors */
+#menu li:nth-child(1) {
+  border-top: 5px solid #e1493e;
+}
+
+#menu li:nth-child(2) {
+  border-top: 5px solid #8aba56;
+}
+
+#menu li:nth-child(3) {
+  border-top: 5px solid #5b4282;
+}
+
+#menu li:nth-child(4) {
+  border-top: 5px solid #ff8932;
+}
+
+#menu li:nth-child(5) {
+  border-top: 5px solid #19b6e9;
+}
+
+#menu li:nth-child(6) {
+  border-top: 5px solid #e84c8b;
+}
+
+
+/* news */
+#news header {
+  max-width: 10em;
+  padding: 0.8em;
+  position: absolute;
+}
+
+#news header h1 {
+  margin: 0em;
+  text-shadow: .2em .2em .2em rgb(54, 60, 66);
+}
+
+#news header a {
+  color: white;
+  text-decoration: none;
+}
+
+#news img {
+  width: 100%;
+}
+
+#news>article {
+  background-color: white;
+  margin: 0.5em 0.5em 0.5em 0em;
+}
+
+#news>article>p {
+  padding: 0 1em;
+}
+
+#news>article>p:first-of-type:first-letter {
+  font-size: 2em;
+}
+
+#news footer {
+  color: white;
+  background-color: #f4655f;
+  padding: 1em;
+}
+
+#news footer a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+  padding-bottom: 2px;
+}
+
+#news footer .tags {
+  margin-right: 1em;
+}
+
+#news footer .comments {
+  margin-left: 1em;
+}
+
+#news footer .comments:after {
+  content: ' comments';
+}
+
+#news footer .author:before {
+  content: 'By ';
+}
+
+
+/* related (used in aside) */
+#related {
+  background-color: #2a2f33;
+  padding: 1em;
+}
+
+#related h1 {
+  margin-top: 0em;
+}
+
+#related h1 a {
+  color: white;
+  text-decoration: none;
+}
+
+#related p {
+  color: white;
+  margin-top: -0.8em;
+  margin-bottom: 2em;
+}
+
+
+/* footer */
+body>footer {
+  color: white;
+  height: 1em;
+  padding: 1em;
+  margin-right: 0.5em;
+  background-color: #2a2f33;
+}
+
+body>footer p {
+  margin: 0;
+}
