@@ -1,0 +1,28 @@
+body {
+  font-family: 'Franklin Gothic Medium', sans-serif;
+  background-color: #edeff0;
+
+  margin: 0 auto;
+  width: 60em;
+
+}
+
+
+h1 {
+  color: cornflowerblue;
+}
+
+label {
+  display: block;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+input {
+  display: block;
+  padding: 0.5em;
+}
+
+input[type=submit] {
+  margin-top: 0em;
+}

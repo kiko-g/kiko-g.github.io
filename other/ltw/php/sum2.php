@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <title>Sum Two</title>
-  <meta charset="utf-8">
-</head>
-
-<body>
+  <head>
+    <title>Sum Two Numbers</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+  </head>
+  <body>
   <?php
-    $num1 = $_GET['num1'];
-    $num2 = $_GET['num2'];
+    $x = $_GET['x'];
+    $y = $_GET['y'];
 
-    echo "<p>" . ($num1 + $num2) . "</p>";
+    echo "<h1>" . ($x + $y) . "</h1>";
   ?>
-  <a href="form2.html">Back</a>
-</body>
 
+  <form action="index.php"> <input type="submit" value="Back" /> </form> 
+  </body>
 </html>

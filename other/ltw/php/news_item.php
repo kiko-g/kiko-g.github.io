@@ -1,37 +1,27 @@
 <?php
   $db = new PDO('sqlite:news.db');
-  
+
   if (!isset($_GET['id']))
     die("No id!");
-    
-    $stmt = $db->prepare('SELECT * FROM news JOIN users USING (username) WHERE id = ?');
+
+  $stmt = $db->prepare('SELECT * FROM news JOIN users USING (username) WHERE id = ?');
   $stmt->execute(array($_GET['id']));
   $article = $stmt->fetch();
-  
+
   $paragraphs = explode("\n", $article['fulltext']);
-  
+
   $stmt = $db->prepare('SELECT * FROM comments JOIN users USING (username) WHERE news_id = ?');
   $stmt->execute(array($_GET['id']));
   $comments = $stmt->fetchAll();
-  ?>
+?>
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
     <title>Super Legit News</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
-    <link href="layout.css" rel="stylesheet">
-    <link href="responsive.css" rel="stylesheet">
-    <link href="comments.css" rel="stylesheet">
-    <link href="forms.css" rel="stylesheet">
+    <link href="news.css" rel="stylesheet">
   </head>
-  <style>
-    h1 {
-      color: dodgerblue;
-    }
-  </style>
-  
   <body>
     <header>
       <h1><a href="list_news.php">Super Legit News</a></h1>
@@ -39,13 +29,14 @@
       <div id="signup">
         <a href="register.html">Register</a>
         <a href="login.html">Login</a>
+        <a href="index.php">Back</a>
       </div>
     </header>
     <nav id="menu">
       <!-- just for the hamburguer menu in responsive layout -->
       <input type="checkbox" id="hamburger">
       <label class="hamburger" for="hamburger"></label>
-
+      
       <ul>
         <li><a href="index.html">Local</a></li>
         <li><a href="index.html">World</a></li>
