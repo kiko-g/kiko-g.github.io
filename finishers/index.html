@@ -16,6 +16,7 @@
 </header>
 
 <body>
+
   <div>
     <p id="counter"></p>
   </div>
@@ -23,6 +24,9 @@
     <button onclick="increment()">FINISHER</button>
   </div>
 
+  <script>
+    document.getElementById("counter").innerHTML = localStorage.clickcount;
+  </script>
 </body>
 
 </html>
