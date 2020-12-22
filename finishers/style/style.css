@@ -26,11 +26,15 @@ div {
   color: whitesmoke;
 
   margin: 0.1em 0;
-  font-size: 10em;
+  font-size: 6em;
   text-align: center;
 
   border-radius: 0;
   border: none;
+}
+
+div>p {
+  font-size: 120%;
 }
 
 div.button {
@@ -70,6 +74,10 @@ button {
   border-radius: 10px;
   color: white;
   background-color: rgb(83, 182, 124);
+}
+
+::-webkit-input-placeholder {
+  color: #ffffffbe;
 }
 
 input[type=submit]:hover,

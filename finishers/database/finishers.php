@@ -16,5 +16,11 @@
     $dbc = Database::instance()->db();
     $statement = $dbc->prepare('UPDATE finishers SET finisher_count = finisher_count + 1 WHERE player_name = ?');
     $statement->execute(array($player_name));
-  }  
+  }
+
+  function decrement($player_name) {
+    $dbc = Database::instance()->db();
+    $statement = $dbc->prepare('UPDATE finishers SET finisher_count = finisher_count - 1 WHERE player_name = ?');
+    $statement->execute(array($player_name));
+  }    
 ?>
