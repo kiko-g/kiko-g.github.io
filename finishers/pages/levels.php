@@ -5,21 +5,21 @@
 
 
 <header>
-  <h1>Sir <b>Scumbag_Kiko</b></h1>
+  <h1>Sir <b>Inspector BeQuiet</b></h1>
 </header>
 
 <body>
   <?php require '../database/finishers.php' ?>
-  <div> <p id="counter">#<?= $entries["Frankie"] ?></p> </div>
+  <div> <p id="counter">#<?= $entries["Levels"] ?></p> </div>
   <?php 
-    if(isset($_SESSION['allow-frankie']) && $_SESSION['allow-frankie'] == true) { ?>
+    if(isset($_SESSION['allow-levels']) && $_SESSION['allow-levels'] == true) { ?>
       <form method="post" action="../actions/action_finisher.php">
-        <input type="hidden" name="player_name" value="Frankie">
+        <input type="hidden" name="player_name" value="Levels">
         <input id="apply" type="submit" value="Finisher">
       </form>
 
       <form method="post" action="../actions/action_undo_finisher.php">
-        <input type="hidden" name="player_name" value="Frankie">
+        <input type="hidden" name="player_name" value="Levels">
         <input id="undo" type="submit" value="Undo">
       </form>
       
