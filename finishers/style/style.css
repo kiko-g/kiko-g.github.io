@@ -1,12 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
 body {
-  color: white;
+  color: rgb(95, 110, 124);
   background-color: #ddd;
   font-family: 'Roboto Slab', serif;
+  margin: 1em 1.5em;
+}
+
+h1 {
+  text-align: center;
+}
+
+b {
+  color: cornflowerblue;
 }
 
 header {
+  color: #eee;
   background-color: #333;
   padding: 1em 2em;
 }
@@ -15,7 +25,7 @@ div {
   background-color: rgb(48, 80, 139);
   color: whitesmoke;
 
-  margin: 0.5em;
+  margin: 0.1em 0;
   font-size: 10em;
   text-align: center;
 
@@ -23,22 +33,36 @@ div {
   border: none;
 }
 
+div.button {
+  background-color: rgb(83, 118, 182);
+}
+
 p {
   margin: 0;
   padding: 0;
 }
 
+input,
 button {
   width: 100%;
+  font-size: 80px;
+
   padding: 5% 0;
-  background-color: rgb(83, 118, 182);
-  color: white;
+  margin-top: 2em;
+
   border: none;
-  font-size: 1em;
+  color: white;
+  background-color: rgb(83, 182, 124);
 }
 
+input:hover,
 button:hover {
   cursor: pointer;
-  opacity: 90%;
+  background-color: rgb(104, 168, 131);
   transition: all 0.1s linear;
+}
+
+button:focus {
+  transition: all 0.1s linear;
+  transform: scale(0.98);
 }
