@@ -42,20 +42,37 @@ p {
   padding: 0;
 }
 
-input,
-button {
-  width: 100%;
-  font-size: 80px;
+input[type=password] {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  font-size: 200%;
 
-  padding: 5% 0;
-  margin-top: 2em;
+  padding: 1% 0;
+  margin: 2% 10%;
 
   border: none;
+  color: white;
+  background-color: rgb(182, 90, 83);
+}
+
+input[type=submit],
+button {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  font-size: 200%;
+
+  padding: 1%;
+  margin: 2% 15%;
+
+  border: none;
+  border-radius: 10px;
   color: white;
   background-color: rgb(83, 182, 124);
 }
 
-input:hover,
+input[type=submit]:hover,
 button:hover {
   cursor: pointer;
   background-color: rgb(104, 168, 131);
@@ -65,4 +82,12 @@ button:hover {
 button:focus {
   transition: all 0.1s linear;
   transform: scale(0.98);
+}
+
+#undo {
+  background-color: rgb(226, 83, 83);
+}
+
+#undo:hover {
+  background-color: rgb(204, 103, 103);
 }

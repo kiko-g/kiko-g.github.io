@@ -4,5 +4,5 @@ CREATE TABLE finishers (
 	finisher_count INTEGER NOT NULL
 );
 
-INSERT INTO finishers(player_name, finisher_count) VALUES ('Frankie', 72);
-INSERT INTO finishers(player_name, finisher_count) VALUES ('Levels', 58);
+INSERT INTO finishers(player_name, finisher_count) VALUES ('Frankie', 73);
+INSERT INTO finishers(player_name, finisher_count) VALUES ('Levels', 59);

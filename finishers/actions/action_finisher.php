@@ -3,5 +3,5 @@
   include_once('../database/finishers.php');
 
   increment('Frankie');
-  header('Location: ../frankie/index.php');
+  header('Location: ../index.php');
 ?>

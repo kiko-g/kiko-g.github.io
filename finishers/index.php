@@ -1,3 +1,3 @@
 <?php
-header('Location: frankie/index.php');
+  header('Location: pages/frankie.php');
 ?>
