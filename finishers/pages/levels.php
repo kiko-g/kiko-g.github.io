@@ -10,16 +10,16 @@
 
 <body>
   <?php require '../database/finishers.php' ?>
-  <div> <p id="counter">#<?= $entries["Levels"] ?></p> </div>
+  <div> <p id="counter">#<?= $entries["levels"] ?></p> </div>
   <?php 
     if(isset($_SESSION['allow-levels']) && $_SESSION['allow-levels'] == true) { ?>
       <form method="post" action="../actions/action_finisher.php">
-        <input type="hidden" name="player_name" value="Levels">
+        <input type="hidden" name="player_name" value="levels">
         <input id="apply" type="submit" value="Finisher">
       </form>
 
       <form method="post" action="../actions/action_undo_finisher.php">
-        <input type="hidden" name="player_name" value="Levels">
+        <input type="hidden" name="player_name" value="levels">
         <input id="undo" type="submit" value="Undo">
       </form>
       
