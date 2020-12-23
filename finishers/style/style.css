@@ -76,10 +76,14 @@ input[type=submit]:hover {
 }
 
 button:focus,
-input[type=submit]:focus {
-  transition: all 0.1s linear;
-  transform: scale(0.95);
+button:active,
+input[type=submit]:focus,
+input[type=submit]:active {
+  transition: all 0.2s ease-in;
+  transform: scale(0.99);
+  transform: translate(1px, -1px);
 }
+
 
 #undo {
   background-color: rgb(226, 83, 83);
@@ -129,6 +133,11 @@ input[type=checkbox] {
   cursor: pointer;
 }
 
+label:hover,
+input[type=checkbox]:hover {
+  opacity: 90%;
+}
+
 /* Password */
 input[type=text],
 input[type=password] {
@@ -142,7 +151,7 @@ input[type=password] {
   border: none;
   color: white;
   background-color: rgb(48, 80, 139);
-  border: 1px dotted rgb(255, 181, 132);
+  border: 1px dotted rgba(160, 235, 210, 0.6);
   border-radius: 20px;
 }
 
