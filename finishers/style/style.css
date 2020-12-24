@@ -118,14 +118,14 @@ input[type=submit]:active {
   margin: 1em auto 0 auto;
   font-size: 25%;
 
-  background-color: rgb(231, 116, 116);
+  background-color: rgb(216, 144, 144);
   border-radius: 10px;
   overflow: hidden;
 }
 
 .lowkey.unchecked {
   background-color: transparent;
-  border: 1px solid rgb(177, 68, 68);
+  border: 1px dotted rgb(190, 100, 100);
 }
 
 label,
@@ -151,7 +151,7 @@ input[type=password] {
   border: none;
   color: white;
   background-color: rgb(48, 80, 139);
-  border: 1px dotted rgba(160, 235, 210, 0.6);
+  border: 1px dotted rgba(169, 224, 206, 0.6);
   border-radius: 20px;
 }
 
