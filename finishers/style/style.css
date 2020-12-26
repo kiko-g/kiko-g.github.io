@@ -6,7 +6,7 @@ body {
   font-family: 'Roboto Slab', serif;
   margin: 0;
   font-size: 20px;
-  width: 99.75%;
+  width: 100%;
   margin: auto;
 }
 
@@ -35,7 +35,7 @@ b {
 
 
 div {
-  background-color: rgb(48, 80, 139);
+  background-color: rgb(0, 83, 172);
   color: whitesmoke;
   height: 85vh;
 

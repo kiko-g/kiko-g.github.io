@@ -5,14 +5,12 @@
   if($password === 'scumbagkiko') {
     session_start();
     $_SESSION['allow-frankie'] = true;
-    $_SESSION['allow-levels'] = false;
     header('Location: ../pages/frankie.php');
   }
 
   if($password === 'bequiet') {
     session_start();
     $_SESSION['allow-levels'] = true;
-    $_SESSION['allow-frankie'] = false;
     header('Location: ../pages/levels.php');
   }  
 
