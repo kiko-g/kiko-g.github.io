@@ -22,6 +22,9 @@
     if (isset($_SESSION['allow-frankie']) && $_SESSION['allow-frankie'] == true) { ?>
       <div>
         <p id="counter">#<?= $entries["frankie"] ?></p><br><br>
+
+
+
         <form method="post" action="../actions/action_finisher.php">
           <input type="hidden" name="player_name" value="frankie">
           <input id="apply" type="submit" value="Finisher">
@@ -39,7 +42,7 @@
           1 of 3
         </div>
 
-        <div class="col-5">
+        <div class="col-7">
           <p id="counter">#<?= $entries["frankie"] ?></p><br><br>
           <form method="post" action="../actions/action_protect.php">
             <input id="password" type="text" placeholder="Password..." name="p">
@@ -59,6 +62,10 @@
     <?php
     }
     ?>
+
+    <footer>
+
+    </footer>
 </body>
 
 </html>
