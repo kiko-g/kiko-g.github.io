@@ -8,8 +8,15 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+* {
+  font-family: "Rubik", sans-serif !important;
+  /* comment this to use Raleway and Open Sans */
+}
+
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif !important;
   color: #272829;
 }
 
@@ -25,9 +32,7 @@ a:hover {
 h1,
 h2,
 h3,
-h4,
-h5,
-h6 {
+h4 {
   font-family: "Raleway", sans-serif;
 }
 
@@ -433,7 +438,7 @@ section {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #44c078;
+  background-color: #405e86; /* 44c078 */
 }
 
 /*--------------------------------------------------------------
@@ -1184,4 +1189,13 @@ table.fixed td {
     color: #173b6c;
     padding: 0em;
   }
+}
+
+/* Utilities */
+.display-none {
+  display: none;
+}
+
+.bg-lb {
+  color: #149ddd;
 }
