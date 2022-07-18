@@ -1,6 +1,5 @@
-# Portfolio
+# Github Pages Website
 
-- Content hosted on github [here](https://kiko-g.github.io/)
-- Webpage on SiFEUP [here](https://web.fe.up.pt/~up201704790)
-
-> Updated as of November 2020
+- https://kiko-g.github.io
+- https://kikogoncalves.com
+- https://web.fe.up.pt/~up201704790
